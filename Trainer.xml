@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<group>
+<rectangle left="10" top="15" width="300" height="505" 
+                  color="black" strokeColor="blue" strokeSize="5"/>
+
+                       <label left="140" top="20" text="GERAL" />
+
+                       <horzLine left="20" top="80" width="280" strokeColor="#bf4545"/>
+                       <label left="20" top="80" text="nome" />
+
+                       <horzLine left="20" top="130" width="80" strokeColor="#bf4545"/>
+                       <label left="20" top="130" text="idade" />
+
+                       <horzLine left="110" top="130" width="85" strokeColor="#bf4545"/>
+                       <label left="110" top="130" text="peso" />
+
+                       <horzLine left="205" top="130" width="95" strokeColor="#bf4545"/>
+                       <label left="205" top="130" text="altura" />
+
+                       <horzLine left="20" top="175" width="280" strokeColor="#bf4545"/>
+                       <label left="20" top="175" text="₽" />
+
+
+
+<rectangle left="320" top="15" width="405" height="505" 
+                  color="black" strokeColor="blue" strokeSize="5"/>
+
+                  <label left="540" top="20" text="PERÍCIAS" />
+
+
+
+
+<rectangle left="735" top="15" width="300" height="505" 
+                  color="black" strokeColor="blue" strokeSize="5"/>
+
+                  <label left="840" top="20" text="MORAL" />
+
+
+</group>
+
+    
