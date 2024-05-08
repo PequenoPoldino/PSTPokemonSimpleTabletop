@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<group>
+
+ <colorComboBox name="colorComboBox1" onUserChange="self.SWcolor()" left="20" field="colorcard" useAlpha="false" top="0" width="200" height="55" color="grey" >
+
+
+         <script>
+                function self.SWcolor()
+
+                     GCTC= "";
+
+                       self.trainercard.color = self.colorComboBox1.color;
+
+                    GCTC = self.trainercard.color ;
+
+                    self.trainercard.color = GCTC;
+                end;
+        </script>     
+
+ </colorComboBox>
+
+<colorComboBox name="colorComboBox2" onUserChange="self.SWstrokecolor()" left="220" field="strokecolorcard" useAlpha="false" top="0" width="200" height="55" color="blue" >
+
+
+         <script>
+                function self.SWstrokecolor()
+
+                     GCTCz = "";
+
+                       self.trainercard.strokeColor = self.colorComboBox2.color;
+
+                    GCTCz = self.trainercard.strokeColor ;
+
+                    self.trainercard.strokeColor = GCTCz;
+
+                    self.persoline.color = self.trainercard.strokeColor;
+                end;
+        </script>     
+
+ </colorComboBox>
+
+ <rectangle name="trainercard" left="20"  top="70" width="700" height="450" color="grey" strokeColor="blue" strokeSize="5"/>
+
+<rectangle left="730" top="0" width="5" height="555" name="persoline" color="blue"/>
+
+<!--Trainer card layout-->
+
+        <style>
+
+                .camatt {
+                   
+                        fontSize: 20;
+
+                       
+                }    
+         </style>
+<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+
+    
+<label name="lb1" text="HP" class="camatt" left="40" top="295"/>
+<label name="lb2" text="=" left="300" top="295"/>
+<rectangle width="50" strokeSize="3" name="rec4" color="null" strokeColor="blue" left="320" top="280"/>
+
+<flowLayout left="140" top="280" width="330" autoHeight="true" orientation="horizontal">
+
+
+<rectangle width="50" strokeSize="3" name="rec1" color="null" strokeColor="blue"/>
+<rectangle width="50" strokeSize="3" name="rec2" color="null" strokeColor="blue"/>
+<rectangle width="50" strokeSize="3" name="rec3" color="null" strokeColor="blue"/>
+
+
+</flowLayout>
+
+
+<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+
+<label name="lb3" text="HP" class="camatt" left="40" top="295"/>
+<label name="lb4" text="=" left="300" top="355"/>
+<rectangle width="50" strokeSize="3" name="rec8" color="null" strokeColor="blue" left="320" top="340"/>
+
+<flowLayout left="140" top="340" width="330" autoHeight="true" orientation="horizontal">
+
+
+<rectangle width="50" strokeSize="3" name="rec5" color="null" strokeColor="blue"/>
+<rectangle width="50" strokeSize="3" name="rec6" color="null" strokeColor="blue"/>
+<rectangle width="50" strokeSize="3" name="rec7" color="null" strokeColor="blue"/>
+
+
+</flowLayout>
+
+<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+
+
+<horzLine left="25" top="110" width="180" strokeSize="3" name="persoline0" strokeColor="blue"/>
+
+<horzLine left="25" top="170" width="180" strokeSize="3" name="persoline100" strokeColor="blue"/>
+
+<rectangle left="80" top="140" width="3" height="30" name="persoline1" color="blue"/>
+
+<rectangle left="140" top="140" width="3" height="30" name="persoline2" color="blue"/>
+
+<rectangle width="240" height="430" left="470" top="80" color="Null" strokeColor="blue" strokeSize="3"/>
+
+<horzLine left="25" top="170" width="180" strokeSize="3" name="persoline100" strokeColor="blue"/>
+
+
+<image field="imagemDoPersonagem" editable="false" style="autoFit" 
+ left="473" top="83" width="234" height="424" />
+
+
+
+      
+       <tabControl left="750" top="10" width="290" height="510">
+     
+                <tab title="Habilidades" >  
+          
+                </tab>
+
+                <tab title="Golpes" >  
+             
+                </tab>
+
+                <tab title="Recursos" >  
+             
+                </tab>
+               
+        </tabControl>
+
+
+</group>
+

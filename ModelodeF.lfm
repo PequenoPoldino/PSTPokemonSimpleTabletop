@@ -6,8 +6,15 @@
 
      <tabControl left="20" top="20" width="1050" height="560">
      
-                <tab title="Treinador" >         
+                <tab title="Treinador" >  
+                <rectangle top="0" width="150" height="760" color="black"/>   
+                <image src="/img/walp3.jpg" left="100" top="-15"  width="1000" height="760"/>    
                 <import file="Trainer.xml"/>
+                </tab>
+
+
+                <tab title="Trainer Card" >  
+                <import file="Combate.xml"/>
                 </tab>
                
         </tabControl>

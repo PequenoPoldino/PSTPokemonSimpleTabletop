@@ -1,40 +1,214 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <group>
-<rectangle left="10" top="15" width="300" height="505" 
-                  color="black" strokeColor="blue" strokeSize="5"/>
+
+<!--
+<rectangle left="10" top="15" width="300" height="505" color="black" strokeColor="blue" strokeSize="5"/>
+-->
 
                        <label left="140" top="20" text="GERAL" />
 
+                       <edit field="name" left="20" top="55" width="280" transparent="true"/>
                        <horzLine left="20" top="80" width="280" strokeColor="#bf4545"/>
                        <label left="20" top="80" text="nome" />
-
+                       
+                       <edit field="age" left="20" top="105" width="80" transparent="true"/>
                        <horzLine left="20" top="130" width="80" strokeColor="#bf4545"/>
                        <label left="20" top="130" text="idade" />
 
+                       <edit field="labs" left="110" top="105" width="85" transparent="true"/>
                        <horzLine left="110" top="130" width="85" strokeColor="#bf4545"/>
                        <label left="110" top="130" text="peso" />
 
+                       <edit field="H8" left="205" top="105" width="95" transparent="true"/>
                        <horzLine left="205" top="130" width="95" strokeColor="#bf4545"/>
                        <label left="205" top="130" text="altura" />
 
+                       <edit field="Monei" left="20" top="150" width="280" transparent="true"/>
                        <horzLine left="20" top="175" width="280" strokeColor="#bf4545"/>
                        <label left="20" top="175" text="₽" />
 
+                       <edit field="player" left="20" top="190" width="280" transparent="true"/>
+                       <horzLine left="20" top="215" width="280" strokeColor="#bf4545"/>
+                       <label left="20" top="215" text="Jogador" />
+
+                       <rectangle width="280" left="20" top="245" height="275"  color="black" strokeColor="#bf4545" 
+                       strokeSize="3"/>
+
+                       <label left="85" top="365" width="280" text="Imagem do Personagem" />
+
+                       <image field="imagemDoPersonagem" editable="true" style="autoFit" 
+                       left="20" top="245" width="280" height="275" />
 
 
-<rectangle left="320" top="15" width="405" height="505" 
-                  color="black" strokeColor="blue" strokeSize="5"/>
-
-                  <label left="540" top="20" text="PERÍCIAS" />
+                <rectangle left="315" top="0" width="5" height="555" color="#bf4545"/>
 
 
 
 
-<rectangle left="735" top="15" width="300" height="505" 
-                  color="black" strokeColor="blue" strokeSize="5"/>
+<!--
+<rectangle left="320" top="15" width="405" height="505"  color="black" strokeColor="blue" strokeSize="5"/>
+-->
 
-                  <label left="840" top="20" text="MORAL" />
+            <style>
+
+                .camperi {
+                        horzTextAlign: center;
+                        fontSize: 40;
+                        align: none;
+                }    
+            </style>
+
+
+
+
+
+
+
+                  <label left="493" top="20" text="PERÍCIAS" />
+
+      
+                   <flowLayout left="350" top="80" width="180" autoHeight="true" orientation="horizontal">
+
+                      <button text="Sobrevivência" width="100"/>
+                      <flowLineBreak/>
+                      <rectangle width="100" height="70"  color="black" strokeColor="#bf4545" strokeSize="3"/>
+                      <flowLineBreak/>
+              
+                 </flowLayout>
+                 <edit field="sob" class="camperi" left="350" type="number" top="102" max="100" width="100" height="70" transparent="true"/>
+               
+
+                 <flowLayout left="350" top="180" width="180" autoHeight="true" orientation="horizontal">
+                     
+                      <button text="Ginástica" width="100"/>
+                      <flowLineBreak/>
+                      <rectangle width="100" height="70"  color="black" strokeColor="#bf4545" strokeSize="3"/>
+                      <flowLineBreak/>
+              
+                 </flowLayout>
+                 <edit field="gym" class="camperi" left="350" type="number" top="202" max="100" width="100" height="70" transparent="true"/>
+
+                 <flowLayout left="350" top="280" width="180" autoHeight="true" orientation="horizontal">
+                     
+                      <button text="Percepção" width="100"/>
+                      <flowLineBreak/>
+                      <rectangle width="100" height="70"  color="black" strokeColor="#bf4545" strokeSize="3"/>
+                      <flowLineBreak/>
+              
+                 </flowLayout>
+                  <edit field="per" class="camperi" left="350" top="302" max="100" width="100" height="70" transparent="true"/>
+                 <!--000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000-->
+
+                 <flowLayout left="595" top="80" width="180" autoHeight="true" orientation="horizontal">
+
+                      <button text="Conhecimento" name="cnh" width="100" onClick="self.conhecimentosAdq:show('leftCenter', self.cnh);"/>
+                      <flowLineBreak/>
+                      <rectangle width="100" height="70"  color="black" strokeColor="#bf4545" strokeSize="3"/>
+                      <flowLineBreak/>
+
+                      <popup name="conhecimentosAdq" top="-40" width="190" height="150" backOpacity="0.5">
+                      
+                      <label text="Especialidades" top="13" left="53" />
+                      <textEditor field="cadq" left="5" top="40" width="180" height="105" transparent="false"/>
+                      
+                      </popup>
+                 </flowLayout>
+                  <edit field="conh" class="camperi" left="595" type="number" top="102" max="100" width="100" height="70" transparent="true"/>
+
+
+
+
+
+                 <flowLayout left="595" top="180" width="180" autoHeight="true" orientation="horizontal">
+                     
+                      <button text="Intuição" width="100"/>
+                      <flowLineBreak/>
+                      <rectangle width="100" height="70"  color="black" strokeColor="#bf4545" strokeSize="3"/>
+                      <flowLineBreak/>
+              
+                 </flowLayout>
+                 <edit field="intu" class="camperi" type="number" left="595" top="202" max="100" width="100" height="70" transparent="true"/>
+
+                 <flowLayout left="595" top="280" width="180" autoHeight="true" orientation="horizontal">
+                     
+                      <button text="Charme" width="100"/>
+                      <flowLineBreak/>
+                      <rectangle width="100" height="70"  color="black" strokeColor="#bf4545" strokeSize="3"/>
+                      <flowLineBreak/>
+              
+                 </flowLayout>
+                  <edit field="char" class="camperi" type="number" left="595" top="302" max="100" width="100" height="70" transparent="true"/>
+
+                 <image left="285" top="157" width="480" height="480" src="/img/divisorpkm.png"/>
+
+                 <image left="285" top="157" width="480" height="480" src="/img/divisorpkm.png"/>
+
+               <!--oooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo-->
+                
+                 <flowLayout left="350" top="420" width="180" autoHeight="true" orientation="horizontal">
+                     
+                      <button text="Pontos Totais" width="100"/>
+                      <flowLineBreak/>
+                      <rectangle width="100" height="70"  color="black" strokeColor="#bf4545" strokeSize="3"/>
+                      <flowLineBreak/>
+              
+                 </flowLayout>
+                  <edit field="PT" class="camperi" type="number" left="350" top="440" max="100" width="100" height="70" transparent="true"/>
+
+
+                 <flowLayout left="475" top="420" width="180" autoHeight="true" orientation="horizontal">
+                     
+                      <button text="Pontos Gastos" width="100"/>
+                      <flowLineBreak/>
+                      <rectangle width="100" height="70"  color="black" strokeColor="#bf4545" strokeSize="3"/>
+                      <flowLineBreak/>
+              
+                 </flowLayout>
+                  <edit field="PG" class="camperi" type="number" left="475" top="440" max="100" width="100" height="70" transparent="true"/>
+
+
+                 <flowLayout left="595" top="420" width="180" autoHeight="true" orientation="horizontal">
+                     
+                      <button text="Pontos Avulsos" width="100"/>
+                      <flowLineBreak/>
+                      <rectangle width="100" height="70"  color="black" strokeColor="#bf4545" strokeSize="3"/>
+                      <flowLineBreak/>
+              
+                 </flowLayout>
+                 <label field="PA" class="camperi"  left="595" top="440" width="100" height="70"/>
+
+
+
+
+
+                <rectangle left="728" top="0" width="5" height="555" color="#bf4545"/>
+
+
+
+
+
+     
+
+<!--
+<rectangle left="735" top="15" width="300" height="505" color="black" strokeColor="blue" strokeSize="5"/>
+-->
+
+                  <label left="855" top="20" text="REPUTAÇÃO" />
+
+                  <button left="850" top="50" height="25" text="Adicionar" width="80"
+                onClick="self.Morerep:append();"/>
+
+<flowLayout left="740" width="300" autoHeight="true" top="76"  orientation="horizontal">
+<scrollBox  width="330" height="460">
+                <recordList name="Morerep" field="reput" templateForm="tpmREP"
+                         width="300" autoHeight="true">
+        <event name="onCompare">
+                return Utils.compareStringPtBr(nodeA.nome, nodeB.nome);
+        </event>
+</recordList>
+</scrollBox>
+</flowLayout>
 
 
 </group>

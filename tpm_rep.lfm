@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<form name="tpmREP" left="850" height="30" margins="{top=2,bottom=5}">  
+
+<scrollBox  width="300" height="30">
+
+<flowLayout width="220" height="30" margins="{top=2}" orientation="horizontal">
+  <edit align="client"  field="local" margins="{right=2}"/>
+
+  <edit align="client" field="reuup" max="9" type="number" width="30" />
+
+<imageCheckBox uncheckedImage="/img/reputpkm.png" checkedImage="/img/reputpkm1.png" field="RPT1" width="20" height="20" />
+
+<imageCheckBox uncheckedImage="/img/reputpkm.png" checkedImage="/img/reputpkm2.png" field="RPT2" width="20" height="20" />
+
+<imageCheckBox uncheckedImage="/img/reputpkm.png" checkedImage="/img/reputpkm3.png" field="RPT3" width="20" height="20" />
+
+        <button text="X" width="20"
+                onClick="NDB.deleteNode(sheet);"/>
+        </flowLayout>
+
+</scrollBox>
+</form>
+

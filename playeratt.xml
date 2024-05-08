@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<group>
+
+<label name="lb1" text="HP" class="camatt" left="40" top="295"/>
+<label name="lb2" text="=" left="300" top="295"/>
+<rectangle width="50" strokeSize="3" name="rec4" color="null" strokeColor="blue" left="320" top="280"/>
+
+<flowLayout left="140" top="280" width="330" autoHeight="true" orientation="horizontal">
+
+
+<rectangle width="50" strokeSize="3" name="rec1" color="null" strokeColor="blue"/>
+<rectangle width="50" strokeSize="3" name="rec2" color="null" strokeColor="blue"/>
+<rectangle width="50" strokeSize="3" name="rec3" color="null" strokeColor="blue"/>
+
+
+</flowLayout>
+
+</group>
